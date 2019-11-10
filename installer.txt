@@ -1,2 +1,3 @@
 npm install @auth0/angular-jwt
 npm install --save sweetalert2
+ng add @angular/material #puis on a choisi indigo et puis Y et Y
