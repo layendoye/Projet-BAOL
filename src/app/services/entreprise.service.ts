@@ -8,8 +8,20 @@ export class EntrepriseService {
 
   private urlBack='http://127.0.0.1:5000';
   constructor(private httpClient: HttpClient) { }
-  getUsers(){
-    return this.getElement("/users");
+  getEntreprise(){
+    return this.getElement("/Entreprise");
+  }
+  setEntreprise(data:any){
+    return this.postElement(data,"/ajout_admin/");
+  }
+  getOneEntreprise(id:number){
+    return this.getElement("/modif_admin/"+id);
+  }
+  updateEntreprise(id:number,data:any){
+    return this.postElement(data,"/modif_admin/"+id);
+  }
+  bloquerPart(id:any){
+    return this.getElement("/modif_statusadmin/"+id);
   }
   postElement(data:any,url:string){//return une promise
     return new Promise<any>(

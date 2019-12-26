@@ -3,16 +3,23 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './security/login/login.component';
 import { ListeProduitsComponent } from './produit/liste-produits/liste-produits.component';
-import { ListeUsersComponent } from './user/liste-users/liste-users.component';
+//import { ListeUsersComponent } from './user/liste-users/liste-users.component';
+import { ListeadminComponent } from './Entreprise/listeadmin/listeadmin.component';
+import { VenteComponent } from './produit/vente/vente.component';
+import { NewventeComponent } from './produit/newvente/newvente.component';
 
 
 const routes: Routes = [
-  { path: '', canActivate: [AuthGuard] , component: ListeProduitsComponent},
+  {
+    path: '',
+    redirectTo: '/vente',
+    pathMatch: 'full'
+  },
   { path: 'login', component: LoginComponent },
   { path: 'produits', canActivate: [AuthGuard] , component: ListeProduitsComponent},
-  { path: 'users', canActivate: [AuthGuard] , component: ListeUsersComponent},
-  //{ path: 'not-found', component:FourOhFourComponent},
-  //{ path: '**', redirectTo: '/not-found'}
+  { path: 'vente', canActivate: [AuthGuard] , component: VenteComponent},
+  { path: 'Entreprise', canActivate: [AuthGuard] , component: ListeadminComponent},
+  { path: 'newvente', canActivate: [AuthGuard] , component: NewventeComponent},
 ];
 
 @NgModule({

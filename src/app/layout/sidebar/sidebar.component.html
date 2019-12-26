@@ -2,8 +2,17 @@
     MENU</div>
 <ul class="sidebar-menu list-unstyled">
     <li class="sidebar-list-item"><a routerLink="/" class="sidebar-link text-muted"><i class="o-home-1 mr-3 text-gray"></i><span>Home</span></a></li>
-    <li class="sidebar-list-item"><a routerLink="/users" class="sidebar-link text-muted"><i class="o-table-content-1 mr-3 text-gray"></i><span>Employés</span></a></li>
-    <li class="sidebar-list-item"><a routerLink="/produits" class="sidebar-link text-muted"><i class="o-sales-up-1 mr-3 text-gray"></i><span>Mes produits</span></a></li>
+    <li class="sidebar-list-item"><a routerLink="/Entreprise" class="sidebar-link text-muted"><i class="o-table-content-1 mr-3 text-gray"></i><span>Administration</span></a></li>
+    <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-sales-up-1 mr-3 text-gray"></i><span>Mes produits</span></a>
+        <div id="pages" class="collapse">
+            <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+                <li class="sidebar-list-item"><a routerLink="/vente" class="sidebar-link text-muted pl-lg-5">Enregistrement</a></li>
+                <li class="sidebar-list-item"><a routerLink="/vente" class="sidebar-link text-muted pl-lg-5">Ventes</a></li>
+                
+            </ul>
+        </div>
+    </li> 
+
     <li class="sidebar-list-item"><a href="forms.html" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span>Forms</span></a></li>
     <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span>Pages</span></a>
         <div id="pages" class="collapse">

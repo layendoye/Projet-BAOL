@@ -1,0 +1,78 @@
+table {
+    width: 100%;
+    text-align: center;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+td,
+th {
+    width: 25%;
+}
+
+.pagination,
+td,
+th,
+.recherche {
+    background-color: white;
+    color: #6c757d;
+    border: #6c757d;
+}
+
+.fontAwsModif {
+    color: blue;
+}
+
+.actif {
+    color: green;
+}
+
+.bloquer {
+    color: red;
+}
+
+.btAdd {
+    width: 100%;
+}
+#form-group{
+    border-radius: 10px;
+    height: 80%;
+    width: 80%;
+    background-color:  #CCCCCC ;
+    margin-left: 10%;
+}
+.mat-column-nom {
+    width: 16% !important;
+    text-align:center;
+}
+.mat-column-Adresse {
+    width: 16% !important;
+    text-align:center;
+}
+.mat-column-email {
+    width: 17% !important;
+    text-align:center;
+}
+.mat-column-telephone {
+    width: 13% !important;
+    text-align:center;
+}
+.mat-column-nomentreptise {
+    width: 16% !important;
+    text-align:center;
+}
+.mat-column-adresseEntreprise {
+    width: 16% !important;
+    text-align:center;
+}
+.mat-column-status {
+    width: 3% !important;
+    text-align:center;
+}
+.mat-column-Modifier {
+    width: 3% !important;
+    text-align:center;
+}

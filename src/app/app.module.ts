@@ -13,8 +13,12 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import {SecurityService} from './services/security.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {ListeUsersComponent} from './user/liste-users/liste-users.component';
+//import {ListeUsersComponent} from './user/liste-users/liste-users.component';
 import {ListeProduitsComponent} from './produit/liste-produits/liste-produits.component';
+import { ListeadminComponent } from './Entreprise/listeadmin/listeadmin.component';
+import { VenteComponent } from './produit/vente/vente.component';
+import { NewventeComponent } from './produit/newvente/newvente.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,10 @@ import {ListeProduitsComponent} from './produit/liste-produits/liste-produits.co
     SidebarComponent,
     HeaderComponent,
     ListeProduitsComponent,
-    ListeUsersComponent
+  //  ListeUsersComponent,
+    ListeadminComponent,
+    VenteComponent,
+    NewventeComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +47,6 @@ import {ListeProduitsComponent} from './produit/liste-produits/liste-produits.co
     useClass: TokenInterceptorService,
     multi: true
   }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

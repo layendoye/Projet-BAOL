@@ -1,0 +1,26 @@
+<div class="row pt-5">
+  <div class="col-md-6 mx-auto">
+         <div class="card rounded-0">
+          <div class="card-header">
+              <h3 class="mb-0">Vente des Produits</h3>
+          </div>
+<div class="card-body">
+      <form class="form">
+          <div class="form-group">
+              <label for="">Non Produit</label>
+          <input  [(ngModel)]="UserData.nomprodui" name="nomprodui" type="text" class="form-control rounded-0" required>
+          </div>
+          <div class="form-group">
+            <label for="">Prix Unitaire</label>
+        <input  [(ngModel)]="UserData.prixunitaire" name="prixunitaire" type="text" class="form-control rounded-0" required>
+        </div>
+          <div class="form-group">
+              <label for="">Quantité</label>
+              <input [(ngModel)]="UserData.quantite" name="quantite" type="password" class="form-control rounded-0" required>
+          </div>
+          <button (click)="User()"  type="button" class="btn btn-success float-right">Vendre</button>
+      </form>
+</div>
+      </div>
+  </div>
+</div>
