@@ -8,6 +8,7 @@ import { ListeadminComponent } from './Entreprise/listeadmin/listeadmin.componen
 import { VenteComponent } from './produit/vente/vente.component';
 import { NewventeComponent } from './produit/newvente/newvente.component';
 import { AddProduitComponent } from './produit/add-produit/add-produit.component';
+import { FormtransfertComponent } from './produit/formtransfert/formtransfert.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,8 @@ const routes: Routes = [
   { path: 'Entreprise', canActivate: [AuthGuard] , component: ListeadminComponent},
   { path: 'newvente', canActivate: [AuthGuard] , component: NewventeComponent},
   { path: 'produit/new', canActivate: [AuthGuard] , component: AddProduitComponent},
+  { path: 'form', canActivate: [AuthGuard] , component: FormtransfertComponent},
+
 ];
 
 @NgModule({

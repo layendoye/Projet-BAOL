@@ -19,6 +19,8 @@ import { ListeadminComponent } from './Entreprise/listeadmin/listeadmin.componen
 import { VenteComponent } from './produit/vente/vente.component';
 import { NewventeComponent } from './produit/newvente/newvente.component';
 import { AddProduitComponent } from './produit/add-produit/add-produit.component';
+import { FormtransfertComponent } from './produit/formtransfert/formtransfert.component';
+import { FormserviceService} from './services/formservice.service';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { AddProduitComponent } from './produit/add-produit/add-produit.component
     VenteComponent,
     NewventeComponent,
     AddProduitComponent,
+    FormtransfertComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ import { AddProduitComponent } from './produit/add-produit/add-produit.component
   providers: [
   SecurityService,
   EntrepriseService,
+  FormserviceService,
   {
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptorService,
