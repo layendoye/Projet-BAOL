@@ -1,0 +1,44 @@
+<div class="card">
+    <div class="card-header text-center">
+        <h3 class="h6 text-uppercase mb-0">Enregistrement produit</h3>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label class="form-control-label text-uppercase">Nom du produit</label>
+                <input type="text" placeholder="Nom du produit" formControlName="nom" class="form-control">
+                <mat-error *ngFor="let validation of ValidationMsg.nom">
+                    <mat-error class="error-message" *ngIf="addForm.get('nom').hasError(validation.type) && (addForm.get('nom').touched)">{{validation.message}}</mat-error>
+                </mat-error>
+            </div>
+            <div class="form-group">
+                <label class="form-control-label text-uppercase">Quantité</label>
+                <input type="number" placeholder="Quantité" formControlName="quantite" class="form-control">
+                <mat-error *ngFor="let validation of ValidationMsg.quantite">
+                    <mat-error class="error-message" *ngIf="addForm.get('quantite').hasError(validation.type) && (addForm.get('quantite').touched)">{{validation.message}}</mat-error>
+                </mat-error>
+            </div>
+            <div class="form-group">
+                <label class="form-control-label text-uppercase">Categorie</label>
+                <select placeholder="Categorie" id="" class="form-control">
+                    <option value="">Fer</option>
+                    <option value="">Ciment</option>
+                </select>
+                <mat-error *ngFor="let validation of ValidationMsg.quantite">
+                    <mat-error class="error-message" *ngIf="addForm.get('quantite').hasError(validation.type) && (addForm.get('quantite').touched)">{{validation.message}}</mat-error>
+                </mat-error>
+            </div>
+            <div class="form-group">
+                <label class="form-control-label text-uppercase">Prix total</label>
+                <input type="number" placeholder="Prix total" formControlName="prix" class="form-control">
+                <mat-error *ngFor="let validation of ValidationMsg.prix">
+                    <mat-error class="error-message" *ngIf="addForm.get('prix').hasError(validation.type) && (addForm.get('prix').touched)">{{validation.message}}</mat-error>
+                </mat-error>
+            </div>
+            <div class="form-group row bsubmit">
+                <div class="col-4"></div>
+                <button type="submit" class="btn btn-primary col-4" [disabled]="addForm.invalid">Ajouter</button>
+            </div>
+        </form>
+    </div>
+</div>

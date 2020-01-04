@@ -18,6 +18,7 @@ import {ListeProduitsComponent} from './produit/liste-produits/liste-produits.co
 import { ListeadminComponent } from './Entreprise/listeadmin/listeadmin.component';
 import { VenteComponent } from './produit/vente/vente.component';
 import { NewventeComponent } from './produit/newvente/newvente.component';
+import { AddProduitComponent } from './produit/add-produit/add-produit.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { NewventeComponent } from './produit/newvente/newvente.component';
     ListeadminComponent,
     VenteComponent,
     NewventeComponent,
+    AddProduitComponent,
   ],
   imports: [
     BrowserModule,
